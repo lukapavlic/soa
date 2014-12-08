@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="05_WF81_Web_Wsdl">
+        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+        <dependent-module archiveName="05_WildFly81_Web_WsdlWeb.war" deploy-path="/" handle="module:/resource/05_WildFly81_Web_WsdlWeb/05_WildFly81_Web_WsdlWeb">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="05_WildFly81_Web_WsdlEJB.jar" deploy-path="/" handle="module:/resource/05_WildFly81_Web_WsdlEJB/05_WildFly81_Web_WsdlEJB">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

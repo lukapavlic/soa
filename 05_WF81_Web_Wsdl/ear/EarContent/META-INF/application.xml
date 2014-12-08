@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/application_7.xsd" id="Application_ID" version="7">
+  <display-name>05_WF81_Web_Wsdl</display-name>
+  <module>
+    <web>
+      <web-uri>05_WildFly81_Web_WsdlWeb.war</web-uri>
+      <context-root>05_WildFly81_Web_WsdlWeb</context-root>
+    </web>
+  </module>
+  <module>
+    <ejb>05_WildFly81_Web_WsdlEJB.jar</ejb>
+  </module>
+</application>
