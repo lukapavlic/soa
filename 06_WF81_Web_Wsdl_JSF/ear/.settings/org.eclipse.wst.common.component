@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="06_WF81_Web_Wsdl_JSF">
+        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+        <dependent-module archiveName="06_WF81_Web_Wsdl_JSFWeb.war" deploy-path="/" handle="module:/resource/06_WF81_Web_Wsdl_JSFWeb/06_WF81_Web_Wsdl_JSFWeb">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="06_WF81_Web_Wsdl_JSFEJB.jar" deploy-path="/" handle="module:/resource/06_WF81_Web_Wsdl_JSFEJB/06_WF81_Web_Wsdl_JSFEJB">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

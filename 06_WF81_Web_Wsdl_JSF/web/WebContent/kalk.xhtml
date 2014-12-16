@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html" version="2.0">
+<jsp:directive.page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" />
+
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Kalkulator</title>
+	</head>
+	<body>
+		<f:view>
+			<h:form>
+				
+				<h:inputText value="#{kalk.a}"></h:inputText>
+				<h:inputText value="#{kalk.b}"></h:inputText>
+				<h:outputText value="#{kalk.rez}"></h:outputText>
+				
+				<h:commandButton value="PLUS" actionListener="#{kalk.sestej}"></h:commandButton>
+				
+				<h:dataTable value="#{kalk.vsiRacuni}" var="r">
+				
+					<h:column>
+						<f:facet name="header">
+							<h:outputText value="RAČUN"> </h:outputText>
+						</f:facet>
+						<h:outputText value="#{r.racun}"> </h:outputText>
+					</h:column>
+					
+					<h:column>
+						<f:facet name="header">
+							<h:outputText value="REZULTAT"> </h:outputText>
+						</f:facet>
+						<h:outputText value="#{r.rezultat}"> </h:outputText>
+					</h:column>
+				
+				</h:dataTable>
+	
+			</h:form>
+		</f:view>
+	</body>
+</html>
+
+</jsp:root>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/application_7.xsd" id="Application_ID" version="7">
+  <display-name>06_WF81_Web_Wsdl_JSF</display-name>
+  <module>
+    <web>
+      <web-uri>06_WF81_Web_Wsdl_JSFWeb.war</web-uri>
+      <context-root>06_WF81_Web_Wsdl_JSFWeb</context-root>
+    </web>
+  </module>
+  <module>
+    <ejb>06_WF81_Web_Wsdl_JSFEJB.jar</ejb>
+  </module>
+</application>
