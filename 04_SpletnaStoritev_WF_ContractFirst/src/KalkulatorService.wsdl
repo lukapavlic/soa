@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<definitions
+	xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+	xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy"
+	xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:tns="http://feri.um.si/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://feri.um.si/"
+	name="KalkulatorService">
+	
+	<types>
+		<xsd:schema>
+			<xsd:import namespace="http://feri.um.si/" schemaLocation="KalkulatorService.xsd" />
+		</xsd:schema>
+	</types>
+	
+	<message name="sestej">
+		<part name="parameters" element="tns:sestej" />
+	</message>
+	<message name="sestejResponse">
+		<part name="parameters" element="tns:sestejResponse" />
+	</message>
+	<message name="odstej">
+		<part name="parameters" element="tns:odstej" />
+	</message>
+	<message name="odstejResponse">
+		<part name="parameters" element="tns:odstejResponse" />
+	</message>
+	<message name="mnozi">
+		<part name="parameters" element="tns:mnozi" />
+	</message>
+	<message name="mnoziResponse">
+		<part name="parameters" element="tns:mnoziResponse" />
+	</message>
+	<message name="deli">
+		<part name="parameters" element="tns:deli" />
+	</message>
+	<message name="deliResponse">
+		<part name="parameters" element="tns:deliResponse" />
+	</message>
+	<message name="obdelaj">
+		<part name="parameters" element="tns:obdelaj" />
+	</message>
+	<message name="obdelajResponse">
+		<part name="parameters" element="tns:obdelajResponse" />
+	</message>
+	<portType name="Kalkulator">
+		<operation name="sestej">
+			<input wsam:Action="http://feri.um.si/Kalkulator/sestejRequest"
+				message="tns:sestej" />
+			<output wsam:Action="http://feri.um.si/Kalkulator/sestejResponse"
+				message="tns:sestejResponse" />
+		</operation>
+		<operation name="odstej">
+			<input wsam:Action="http://feri.um.si/Kalkulator/odstejRequest"
+				message="tns:odstej" />
+			<output wsam:Action="http://feri.um.si/Kalkulator/odstejResponse"
+				message="tns:odstejResponse" />
+		</operation>
+		<operation name="mnozi">
+			<input wsam:Action="http://feri.um.si/Kalkulator/mnoziRequest"
+				message="tns:mnozi" />
+			<output wsam:Action="http://feri.um.si/Kalkulator/mnoziResponse"
+				message="tns:mnoziResponse" />
+		</operation>
+		<operation name="deli">
+			<input wsam:Action="http://feri.um.si/Kalkulator/deliRequest"
+				message="tns:deli" />
+			<output wsam:Action="http://feri.um.si/Kalkulator/deliResponse"
+				message="tns:deliResponse" />
+		</operation>
+		<operation name="obdelaj">
+			<input wsam:Action="http://feri.um.si/Kalkulator/obdelajRequest"
+				message="tns:obdelaj" />
+			<output wsam:Action="http://feri.um.si/Kalkulator/obdelajResponse"
+				message="tns:obdelajResponse" />
+		</operation>
+	</portType>
+	<binding name="KalkulatorPortBinding" type="tns:Kalkulator">
+		<soap:binding transport="http://schemas.xmlsoap.org/soap/http"
+			style="document" />
+		<operation name="sestej">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal" />
+			</input>
+			<output>
+				<soap:body use="literal" />
+			</output>
+		</operation>
+		<operation name="odstej">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal" />
+			</input>
+			<output>
+				<soap:body use="literal" />
+			</output>
+		</operation>
+		<operation name="mnozi">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal" />
+			</input>
+			<output>
+				<soap:body use="literal" />
+			</output>
+		</operation>
+		<operation name="deli">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal" />
+			</input>
+			<output>
+				<soap:body use="literal" />
+			</output>
+		</operation>
+		<operation name="obdelaj">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal" />
+			</input>
+			<output>
+				<soap:body use="literal" />
+			</output>
+		</operation>
+	</binding>
+	
+	<service name="KalkulatorService">
+		<port name="KalkulatorPort" binding="tns:KalkulatorPortBinding">
+			<soap:address location="http://127.0.0.1:8080/04_SpletnaStoritev_WF_ContractFirst/KalkulatorService" />
+		</port>
+	</service>
+</definitions>

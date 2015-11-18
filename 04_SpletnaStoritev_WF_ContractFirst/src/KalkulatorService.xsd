@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<xs:schema xmlns:tns="http://feri.um.si/" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	version="1.0" targetNamespace="http://feri.um.si/">
+
+	<xs:element name="deli" type="tns:deli" />
+
+	<xs:element name="deliResponse" type="tns:deliResponse" />
+
+	<xs:element name="mnozi" type="tns:mnozi" />
+
+	<xs:element name="mnoziResponse" type="tns:mnoziResponse" />
+
+	<xs:element name="obdelaj" type="tns:obdelaj" />
+
+	<xs:element name="obdelajResponse" type="tns:obdelajResponse" />
+
+	<xs:element name="odstej" type="tns:odstej" />
+
+	<xs:element name="odstejResponse" type="tns:odstejResponse" />
+
+	<xs:element name="sestej" type="tns:sestej" />
+
+	<xs:element name="sestejResponse" type="tns:sestejResponse" />
+
+	<xs:complexType name="odstej">
+		<xs:sequence>
+			<xs:element name="arg0" type="xs:int" />
+			<xs:element name="arg1" type="xs:int" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="odstejResponse">
+		<xs:sequence>
+			<xs:element name="return" type="xs:int" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="sestej">
+		<xs:sequence>
+			<xs:element name="arg0" type="xs:int" />
+			<xs:element name="arg1" type="xs:int" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="sestejResponse">
+		<xs:sequence>
+			<xs:element name="return" type="xs:int" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="deli">
+		<xs:sequence>
+			<xs:element name="arg0" type="xs:int" />
+			<xs:element name="arg1" type="xs:int" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="deliResponse">
+		<xs:sequence>
+			<xs:element name="return" type="xs:int" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="mnozi">
+		<xs:sequence>
+			<xs:element name="arg0" type="xs:int" />
+			<xs:element name="arg1" type="xs:int" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="mnoziResponse">
+		<xs:sequence>
+			<xs:element name="return" type="xs:int" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="obdelaj">
+		<xs:sequence>
+			<xs:element name="arg0" type="xs:int" />
+			<xs:element name="arg1" type="xs:int" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="obdelajResponse">
+		<xs:sequence>
+			<xs:element name="return" type="tns:racun" minOccurs="0"
+				maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="racun">
+		<xs:sequence>
+			<xs:element name="racun" type="xs:string" minOccurs="0" />
+			<xs:element name="rezultat" type="xs:int" />
+		</xs:sequence>
+	</xs:complexType>
+	
+</xs:schema>
