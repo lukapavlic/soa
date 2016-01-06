@@ -1,13 +1,18 @@
 package si.um.feri;
 
+import java.net.URL;
 import si.um.feri.gen.Kalkulator;
 import si.um.feri.gen.KalkulatorService;
 
 public class Odjemalec {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 
-		Kalkulator kalk=new KalkulatorService().getKalkulatorPort();
+		String wsdl="http://164.8.251.196:8080/05_WildFly81_Web_WsdlWeb/Kalkulator?wsdl";
+		//String wsdl="http://localhost:8080/05_WildFly81_Web_WsdlWeb/Kalkulator?wsdl";
+			
+		Kalkulator kalk=new KalkulatorService(new URL(wsdl)).getKalkulatorPort();
+		//Kalkulator kalk=new KalkulatorService().getKalkulatorPort();
 		
 		System.out.println(kalk.sestej(10,3));
 		System.out.println(kalk.odstej(10,3));
