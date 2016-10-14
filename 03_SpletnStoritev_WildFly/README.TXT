@@ -1,4 +1,4 @@
-Spletna storitev (Kalkulator.java) je pripravljena na objavo na strežniku WildFly (testirano na ver 8.1 in 9).
+Spletna storitev (Kalkulator.java) je pripravljena na objavo na strežniku WildFly (testirano na ver 8, 9 in 10).
 
 Testirano tudi na GlassFish 4.1
 
