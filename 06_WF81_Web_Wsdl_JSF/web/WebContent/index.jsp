@@ -8,11 +8,11 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>WildFly 8.1 Demo: EJB + JSP + JSF + WSDL</title>
+	<title>WildFly Demo: EJB + JSP + JSF + WSDL</title>
 </head>
 
 <body>
-	<h1>WildFly 8.1 Demo: EJB + JSP + JSF + WSDL</h1>
+	<h1>WildFly Demo: EJB + JSP + JSF + WSDL</h1>
 
 	<a href="faces/kalk.xhtml">JSF stran</a>
 

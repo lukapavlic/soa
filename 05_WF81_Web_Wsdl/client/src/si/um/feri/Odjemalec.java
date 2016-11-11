@@ -8,8 +8,8 @@ public class Odjemalec {
 
 	public static void main(String[] args) throws Exception {
 
-		String wsdl="http://164.8.251.196:8080/05_WildFly81_Web_WsdlWeb/Kalkulator?wsdl";
-		//String wsdl="http://localhost:8080/05_WildFly81_Web_WsdlWeb/Kalkulator?wsdl";
+//		String wsdl="http://164.8.251.196:8080/05_WildFly81_Web_WsdlWeb/Kalkulator?wsdl";
+		String wsdl="http://localhost:8080/05_WildFly81_Web_WsdlWeb/Kalkulator?wsdl";
 			
 		Kalkulator kalk=new KalkulatorService(new URL(wsdl)).getKalkulatorPort();
 		//Kalkulator kalk=new KalkulatorService().getKalkulatorPort();
