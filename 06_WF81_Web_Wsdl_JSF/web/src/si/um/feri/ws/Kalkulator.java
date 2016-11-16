@@ -15,7 +15,7 @@ public class Kalkulator {
 		return ejb.sestej(a, b);
 	}
 
-	public int odstej(int a, int b) {
+	public int odstej(int a, int b)  {
 		return ejb.odstej(a, b);
 	}
 	
